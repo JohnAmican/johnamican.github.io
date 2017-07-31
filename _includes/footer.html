@@ -15,7 +15,9 @@
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
-            <li><a href="{{ site.resume }}" target="_blank">resume</li>
+            {% if site.resume %}
+            <li><a href="{{ site.resume }}" onclick="trackOutboundLink('{{ site.resume }}'); return false;">resume</li>
+            {% endif %}
         </ul>
       </div>
 
