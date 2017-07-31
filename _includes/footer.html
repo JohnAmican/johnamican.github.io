@@ -2,8 +2,6 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading"></h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -13,11 +11,11 @@
             {% else %}
               {{ site.title | escape }}
             {% endif %}
-          </li>
-          {% if site.email %}
+            </li>
+            {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {% endif %}
-          <li><a href="{{ site.resume }}" target="_blank">resume</li>
+            {% endif %}
+            <li><a href="{{ site.resume }}" target="_blank">resume</li>
         </ul>
       </div>
 
